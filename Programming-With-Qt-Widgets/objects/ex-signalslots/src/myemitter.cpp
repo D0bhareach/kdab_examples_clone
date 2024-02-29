@@ -8,18 +8,15 @@
  *
  *************************************************************************/
 
-#include "myreceiver.h"
+#include "myemitter.h"
 
-MyReceiver::MyReceiver(QObject *parent)
-    : QObject(parent)
-{}
-
-void MyReceiver::aSlot()
+MyEmitter::MyEmitter(const QString &label, QWidget *parent)
+    : QPushButton(label, parent)
 {
-    qDebug("A Slot");
+    connect(this, &QPushButton::clicked, this, &MyEmitter::sendSignal);
 }
 
-void MyReceiver::anOtherSlot(int, QObject *)
+void MyEmitter::sendSignal()
 {
-    qDebug("anOtherSlot");
+    emit aSignal();
 }

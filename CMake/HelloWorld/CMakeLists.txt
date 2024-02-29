@@ -1,22 +1,16 @@
-cmake_minimum_required(VERSION 3.10.0)
+cmake_minimum_required(VERSION 3.27.0)
 
-project(helloworld)
+project(helloworld VERSION 0.1.0 LANGUAGES CXX)
 
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-set(CMAKE_AUTOUIC ON)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
+find_package(Qt6 COMPONENTS Widgets REQUIRED )
+qt_standard_project_setup()
+add_subdirectory(src/app)
+add_subdirectory(src/dummy)
 
-find_package(Qt5 CONFIG REQUIRED COMPONENTS Widgets)
-
-add_executable(helloworld
-   mainwindow.ui
-   mainwindow.cpp
-   main.cpp
-   object.cpp
-   resources.qrc)
-
-target_link_libraries(helloworld
-   Qt5::Widgets)
-
+# set directory to executable
+set_target_properties(helloworld PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/bin
+)

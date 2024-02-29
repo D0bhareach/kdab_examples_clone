@@ -1,14 +1,22 @@
 # About
 Quick remark about project. I like Rust, but to be software developer means not only
-do what I like so I need very quick learn C++(Yes, I do not program on this language,
-yet). So far I see that what ever Rust spares developers from in C++ developent world
-considered to be OK. Building system, too verbose syntaxis and, of course, undefined
-behavior. But, again, sorry Rust must learn C/C++ too.   
-Clone of source code from KDAB. This is learning project and some of directories I,
-probably, will not even touch.   
-For development I use VS Code, and after 3 minutes of using QTCreator stated to hate
-it. As building system I use CMake and would like to keep it so. In places I may
-leave it as it is (I'm lazy).   
+do what I like so I need very quick learn C++ (yes, I do not program on this language,
+yet). So far I see that whatever Rust spares developers from in C++ developent world
+considered to be OK, but I'm sorry, Rust, I must learn C/C++ too. (and Assembler,
+and Zig, and whatever else that I will fancy (Carbon? Cabron?), it's a one of good
+things of being unemployed)   
+This Repository is a CLONE!! of source code from KDAB. This is learning project and
+some of directories I, probably, will not even touch. And some I will, probably make a
+total crap of,and that is why I copied the Original instead of  forking it
+- to hide my shame.   
+For development I use VS Code. As building system I use CMake and would like to
+keep it so. In places I may leave it as it is (because I'm lazy).   
+### Note
+After stea.. copying this source and creating my own repository I see that all
+developers which were involved in original project are listed as contributors to this
+repository, please, do not be misleaded in thoughts that whatever I do here deserved
+attention of so many respected contributors. It's a simple Artifact which would please
+my ego and eyes every time I would look at it, nothing more.   
 Below is original content of README:
 
 # KDAB TV Code Repository
